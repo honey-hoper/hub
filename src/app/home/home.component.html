@@ -19,7 +19,7 @@
   </div>
 </section>
 
-<section class="portfolio">
+<section class="home-section">
   <div class="container flex-row flex-align-center">
     <div>Companies we've helped build</div>
     <div class="portfolio-logo-container flex-row flex-align-center">
@@ -32,10 +32,12 @@
   </div>
 </section>
 
-<section>
-  <h3>Explore by category</h3>
-  <div class="flex-row">
-    <app-category-card></app-category-card>
+<section class="home-section">
+  <div class="container flex-column">
+    <h3>Explore<br /> by category</h3>
+    <div class="category-card-container">
+      <app-category-card *ngFor="let category of categories" [category]="category"></app-category-card>
+    </div>
   </div>
 </section>
 

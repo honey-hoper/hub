@@ -37,9 +37,10 @@
 .hero-margin-bottom
   margin-bottom: 5rem
 
-.portfolio
+.home-section
   padding: 4rem 0
   background-color: $colorBackground
+
 
 .portfolio-logo-container
   margin-left: auto
@@ -49,6 +50,17 @@
   height: auto
   filter: grayscale(100%)
 
-
 .portfolio-logo-container > *
   margin: 0 3rem
+
+
+$columnCount: 5
+$gutter: 1rem
+$columnWidth: calc((#{$containerWidth} - (#{$gutter} * (#{$columnCount} - 1))) / #{$columnCount})
+
+.category-card-container
+  margin-top: 3rem
+  display: grid
+  grid-template-columns: repeat($columnCount, $columnWidth)
+  grid-auto-rows: $columnWidth
+  gap: $gutter

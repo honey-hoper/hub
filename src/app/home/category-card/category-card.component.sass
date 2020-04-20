@@ -1,0 +1,63 @@
+@import "src/styles/variables"
+@import "src/styles/flex"
+
+.card
+  @extend .flex-column
+  padding: 1rem 1.5rem
+  width: 100%
+  height: 100%
+  color: $colorOnSurface
+  background-color: $colorSurface
+  &:hover
+    color: #ffffff
+    i
+      color: #ffffff
+
+.card-purple
+  @extend .card
+  i
+    color: #844685
+  &:hover
+    background-color: #844685
+
+.card-turquoise
+  @extend .card
+  i
+    color: #00bdaa
+  &:hover
+    background-color: #00bdaa
+
+.card-orange
+  @extend .card
+  i
+    color: #ffa41b
+  &:hover
+    background-color: #ffa41b
+
+.card-red
+  @extend .card
+  i
+    color: #d63447
+  &:hover
+    background-color: #d63447
+
+.card-green
+  @extend .card
+  i
+    color: #5b8c5a
+  &:hover
+    background-color: #5b8c5a
+
+.card-sky-blue
+  @extend .card
+  i
+    color: #81f5ff
+  &:hover
+    background-color: #81f5ff
+
+.card-yellow
+  @extend .card
+  i
+    color: #ffe75e
+  &:hover
+    background-color: #ffe75e
