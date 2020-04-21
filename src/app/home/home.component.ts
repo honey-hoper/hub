@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
 
   categories;
   jobs;
+  startups;
 
   constructor(
     private dataService: DataService
@@ -18,6 +19,6 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.categories = this.dataService.getCategories();
     this.jobs = this.dataService.getJobs();
+    this.startups = this.dataService.getStartups();
   }
-
 }

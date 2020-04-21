@@ -45,7 +45,7 @@
   <div class="container flex-column">
     <h3>Jobs</h3>
     <span>Find a job you love. <a>Set career interests.</a></span>
-    <div class="job-card-container">
+    <div class="card-container">
       <app-job-card *ngFor="let job of jobs" [job]="job"></app-job-card>
     </div>
     <div class="home-section-btn-container flex-row flex-justify-center">
@@ -54,13 +54,17 @@
   </div>
 </section>
 
-<section>
-  <h3>Startups</h3>
-  <span>Find your second home. Set career interests.</span>
-  <div>
-    <div>card</div>
+<section class="home-section">
+  <div class="container flex-column">
+    <h3>Startups</h3>
+    <span>Find your second home. <a>Set career interests.</a></span>
+    <div class="card-container">
+      <app-startup-card *ngFor="let startup of startups" [startup]="startup"></app-startup-card>
+    </div>
+    <div class="home-section-btn-container flex-row flex-justify-center">
+      <button class="primary-btn home-primary-btn">Show all startups</button>
+    </div>
   </div>
-  <button>Show all startups</button>
 </section>
 
 <section>

@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { CategoryCardComponent } from './home/category-card/category-card.component';
 import { JobCardComponent } from './home/job-card/job-card.component';
+import { StartupCardComponent } from './home/startup-card/startup-card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { JobCardComponent } from './home/job-card/job-card.component';
   HeaderComponent,
   HomeComponent,
   CategoryCardComponent,
-  JobCardComponent
+  JobCardComponent,
+  StartupCardComponent
   ],
   imports: [
     BrowserModule,

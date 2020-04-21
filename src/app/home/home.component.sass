@@ -65,13 +65,13 @@ $categoryCardWidth: calc((#{$containerWidth} - (#{$gutter} * (#{$categoryCardCou
   grid-auto-rows: $categoryCardWidth
   gap: $gutter
 
-$jobCardCount: 3
-$jobCardWidth: calc((#{$containerWidth} - (#{$gutter} * (#{$jobCardCount} - 1))) / #{$jobCardCount})
-.job-card-container
+$cardCount: 3
+$cardWidth: calc((#{$containerWidth} - (#{$gutter} * (#{$cardCount} - 1))) / #{$cardCount})
+.card-container
   margin-top: 3rem
   display: grid
-  grid-template-columns: repeat($jobCardCount, $jobCardWidth)
-  grid-auto-rows: $jobCardWidth
+  grid-template-columns: repeat($cardCount, $cardWidth)
+  grid-auto-rows: $cardWidth
   gap: $gutter
 
 .home-primary-btn
@@ -80,3 +80,4 @@ $jobCardWidth: calc((#{$containerWidth} - (#{$gutter} * (#{$jobCardCount} - 1)))
 
 .home-section-btn-container
   margin-top: 1.5rem
+
