@@ -41,11 +41,36 @@
   </div>
 </section>
 
+<section class="home-section">
+  <div class="container flex-column">
+    <h3>Jobs</h3>
+    <span>Find a job you love. <a>Set career interests.</a></span>
+    <div class="job-card-container">
+      <app-job-card *ngFor="let job of jobs" [job]="job"></app-job-card>
+    </div>
+    <div class="home-section-btn-container flex-row flex-justify-center">
+      <button class="primary-btn home-primary-btn">Show all jobs</button>
+    </div>
+  </div>
+</section>
+
 <section>
-  <h3>Jobs</h3>
-  <span>Find a job you love. Set career interests</span>
-  <app-job-card></app-job-card>
-  <button>Show all jobs</button>
+  <h3>Startups</h3>
+  <span>Find your second home. Set career interests.</span>
+  <div>
+    <div>card</div>
+  </div>
+  <button>Show all startups</button>
+</section>
+
+<section>
+  <span>You're are now seeing jobs from Denmark. The Hub is also available in:</span>
+  <div>
+    <div>Ireland</div>
+    <div>Finland</div>
+    <div>Sweden</div>
+    <div>Norway</div>
+  </div>
 </section>
 
 

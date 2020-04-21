@@ -9,6 +9,7 @@ import {DataService} from '../../services/data.service';
 export class HomeComponent implements OnInit {
 
   categories;
+  jobs;
 
   constructor(
     private dataService: DataService
@@ -16,6 +17,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.categories = this.dataService.getCategories();
+    this.jobs = this.dataService.getJobs();
   }
 
 }

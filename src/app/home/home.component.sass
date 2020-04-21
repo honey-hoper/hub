@@ -54,13 +54,29 @@
   margin: 0 3rem
 
 
-$columnCount: 5
 $gutter: 1rem
-$columnWidth: calc((#{$containerWidth} - (#{$gutter} * (#{$columnCount} - 1))) / #{$columnCount})
 
+$categoryCardCount: 5
+$categoryCardWidth: calc((#{$containerWidth} - (#{$gutter} * (#{$categoryCardCount} - 1))) / #{$categoryCardCount})
 .category-card-container
   margin-top: 3rem
   display: grid
-  grid-template-columns: repeat($columnCount, $columnWidth)
-  grid-auto-rows: $columnWidth
+  grid-template-columns: repeat($categoryCardCount, $categoryCardWidth)
+  grid-auto-rows: $categoryCardWidth
   gap: $gutter
+
+$jobCardCount: 3
+$jobCardWidth: calc((#{$containerWidth} - (#{$gutter} * (#{$jobCardCount} - 1))) / #{$jobCardCount})
+.job-card-container
+  margin-top: 3rem
+  display: grid
+  grid-template-columns: repeat($jobCardCount, $jobCardWidth)
+  grid-auto-rows: $jobCardWidth
+  gap: $gutter
+
+.home-primary-btn
+  padding: 1rem 4rem
+  font-size: 1.1rem
+
+.home-section-btn-container
+  margin-top: 1.5rem

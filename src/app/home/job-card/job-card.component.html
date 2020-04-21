@@ -1,1 +1,13 @@
-<p>job-card works!</p>
+<div [className]="job.className">
+  <div class="flex-row flex-align-center">
+    <div class="category-mark"></div>
+    <h6>{{ job.category }}</h6>
+  </div>
+  <h4>{{ job.title }}</h4>
+  <strong>{{ job.location }} - {{ job.type }}</strong>
+  <div class="flex-1"></div>
+  <div class="flex-row flex-align-center">
+    <img src="{{ job.companyLogo }}"/>
+    <div><strong>{{ job.companyName }}, </strong> <span class="gray-text">{{ job.postedOn }}</span></div>
+  </div>
+</div>
