@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { CategoryCardComponent } from './home/category-card/category-card.component';
 import { JobCardComponent } from './home/job-card/job-card.component';
 import { StartupCardComponent } from './home/startup-card/startup-card.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { StartupCardComponent } from './home/startup-card/startup-card.component
   HomeComponent,
   CategoryCardComponent,
   JobCardComponent,
-  StartupCardComponent
+  StartupCardComponent,
+  FooterComponent
   ],
   imports: [
     BrowserModule,
